@@ -32,6 +32,10 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk package/luci-app-amlogic
 # Add p7zip
 svn co https://github.com/hubutui/p7zip-lede/trunk package/lean/p7zip
 
+# Add luci-app-openclash
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/openwrt-openclash
+pushd package/openwrt-openclash/tools/po2lmo && make && sudo make install 2>/dev/null && popd
+
 # Add autocore
 # svn co https://github.com/ophub/amlogic-s9xxx-openwrt/trunk/amlogic-s9xxx/common-files/patches/autocore package/lean/autocore
 
